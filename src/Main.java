@@ -38,19 +38,17 @@ public class Main {
         devHenrique.registerBootcamp(bootcamp);
 
         System.out.println("Programas nos quais " + devHenrique.getName() + " está inscrito: ");
-        printPrograms(devHenrique.getRegisteredProgram());
+        devHenrique.showRegisteredPrograms();
 
         devHenrique.progressing();
-        System.out.println("-");
 
         System.out.println("Programas nos quais " + devHenrique.getName() + " está inscrito: ");
-        printPrograms(devHenrique.getRegisteredProgram());
+        devHenrique.showRegisteredPrograms();
 
         System.out.println("Programas aos quais " + devHenrique.getName() + " concluiu: ");
-        printPrograms(devHenrique.getConcludedProgram());
+        devHenrique.showConcludedPrograms();
 
-        System.out.println("XP: " + devHenrique.totalXP());
-        System.out.println("-------------------------");
+        devHenrique.showDevResume();
 
 //        Dev devLevi = new Dev();
 //        devLevi.setName("Levi");
@@ -61,9 +59,5 @@ public class Main {
 //        System.out.println("Programas aos quais " + devLevi.getName() + " concluiu: " + devLevi.getConcludedProgram());
     }
 
-    public static void printPrograms(Collection<Program> programs){
-        programs.stream()
-            .map(program -> "------> " + program.getTitle())
-            .forEach(System.out::println);
-    }
+
 }

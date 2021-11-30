@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c7b7068-e91f-4382-8eff-275883794b72" name="Changes" comment="Refactor">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="4c7b7068-e91f-4382-8eff-275883794b72" name="Changes" comment="Implements main method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Bootcamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Bootcamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/abstracao-bootcamp-dio-spread/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/abstracao-bootcamp-dio-spread/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/abstracao-bootcamp-dio-spread/br/com/dio/desafio/dominio/Dev.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/abstracao-bootcamp-dio-spread/br/com/dio/desafio/dominio/Dev.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Dev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Dev.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638283992539</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactor">
+      <created>1638284631327</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638284631327</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implements main method">
+      <created>1638284710227</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638284710227</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,7 +123,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -118,6 +145,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add classes bootcamp and dev" />
     <MESSAGE value="Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
+    <MESSAGE value="Implements main method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implements main method" />
   </component>
 </project>

@@ -1,9 +1,6 @@
 package br.com.dio.desafio.dominio;
 
-import java.util.LinkedHashSet;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 public class Dev {
 
@@ -46,6 +43,27 @@ public class Dev {
 
     public Set<Program> getConcludedProgram() {
         return concludedProgram;
+    }
+
+    public void showRegisteredPrograms(){
+        getRegisteredProgram().stream()
+                .map(program -> "\t-> " + program.getTitle())
+                .forEach(System.out::println);
+    }
+
+    public void showConcludedPrograms(){
+        getConcludedProgram().stream()
+                .map(program -> "\t-> " + program.getTitle())
+                .forEach(System.out::println);
+    }
+
+    public void showDevResume(){
+        System.out.println("Nome -> " + this.name);
+        System.out.println("XP   -> " + this.totalXP());
+        System.out.println("Inscrições:");
+        showRegisteredPrograms();
+        System.out.println("Concluídos: ");
+        showConcludedPrograms();
     }
 
     @Override

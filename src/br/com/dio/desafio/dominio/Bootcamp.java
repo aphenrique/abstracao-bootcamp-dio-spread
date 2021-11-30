@@ -51,8 +51,8 @@ public class Bootcamp {
         return programs;
     }
 
-    public void setPrograms(Set<Program> programs) {
-        this.programs = programs;
+    public void addProgram(Program program) {
+        this.getPrograms().add(program);
     }
 
     @Override

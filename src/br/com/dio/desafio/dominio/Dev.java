@@ -23,13 +23,13 @@ public class Dev {
             this.concludedProgram.add(program.get());
             this.registeredProgram.remove(program.get());
         } else {
-            System.out.println("Você não está matriculado em nenhum conteúdo!");
+            System.out.println(this.name + " não está matriculado em nenhum conteúdo!");
         }
     }
 
     public double totalXP(){
         return this.concludedProgram.stream()
-                .mapToDouble(program -> program.calculateXP()).sum();
+                .mapToDouble(Program::calculateXP).sum();
     }
 
     public String getName() {
@@ -44,16 +44,8 @@ public class Dev {
         return registeredProgram;
     }
 
-    public void setRegisteredProgram(Set<Program> registeredProgram) {
-        this.registeredProgram = registeredProgram;
-    }
-
     public Set<Program> getConcludedProgram() {
         return concludedProgram;
-    }
-
-    public void setConcludedProgram(Set<Program> concludedProgram) {
-        this.concludedProgram = concludedProgram;
     }
 
     @Override
